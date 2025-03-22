@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISO Zambia - Ideal Printing Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Initial loading state */
+        body {
+            opacity: 1;
+            visibility: visible;
+        }
+        .content-loading {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .content-loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-logo">
+                    <img src="images/logofooter.png" alt="RISO Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-loading">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Welcome to RISO Zambia</h1>
+                <p>Your Trusted Partner in Digital Printing Solutions</p>
+                <a href="#products" class="cta-button">Explore Our Products</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Products</h2>
+                    <p>Discover our range of high-quality printing solutions</p>
+                </div>
+                <div class="product-categories">
+                    <div class="category">
+                        <h3>Variable Data Production Printers</h3>
+                        <div class="products-grid" id="variable-printers">
+                            <!-- Products will be loaded here via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="category">
+                        <h3>Duplicators/Static Production</h3>
+                        <div class="products-grid" id="duplicators">
+                            <!-- Products will be loaded here via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About RISO</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>RISO means "ideal" in Japanese, chosen by our founder Noboru Hayama to reflect our commitment to excellence. Since 1954, RISO has been at the forefront of innovation in paper-based communication technology.</p>
+                        <p>We strive to create fundamentally unique technologies that emphasize:</p>
+                        <ul>
+                            <li>Productivity</li>
+                            <li>Cost containment</li>
+                            <li>Versatility</li>
+                        </ul>
+                        <p>Present in over 150 countries, RISO continues to lead the world in digital duplicating technology while expanding our digital laser and inkjet printing solutions.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="main-mv-sp.png" alt="RISO Innovation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <textarea placeholder="Your Message" required></textarea>
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>RISO Zambia</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</p>
+                        <p><i class="fas fa-phone"></i> +260 XXX XXX XXX</p>
+                        <p><i class="fas fa-envelope"></i> info@risozambia.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logofooter.png" alt="RISO Logo">
+                    <p>Your Trusted Partner in Digital Printing Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RISO Zambia. All rights reserved.</p>
+                <div class="footer-attribution">
+                    <p>Designed by <a href="https://ericolas.tech" target="_blank" rel="noopener noreferrer">Ericolas Technologies</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Show content when everything is loaded
+        window.addEventListener('load', function() {
+            document.querySelector('main').classList.add('content-loaded');
+        });
+    </script>
+</body>
+</html> 
